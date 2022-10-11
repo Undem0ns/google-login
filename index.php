@@ -10,12 +10,9 @@
     <script>
     function onSignIn(googleUser) {
         console.log(googleUser)
-        axios.get('http://localhost:3000/api/v1/user')
+        axios.post('http://localhost:3000/api/v1/user/googlesignup', googleUser)
             .then(function(response) {
                 // handle success
-                console.log(response);
-                console.log(response);
-                console.log(response);
                 console.log(response);
             })
             .catch(function(error) {
