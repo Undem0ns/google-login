@@ -33,7 +33,7 @@
     function bindGpLoginBtn() {
         gapi.load('auth2', function() {
             auth2 = gapi.auth2.init({
-                client_id: 'YOUR_CLIENT_ID',
+                client_id: '927679325793-nr98rvaq74vjvipp6gl5b3g9h4jeo7g4',
                 scope: 'profile email'
             });
             attachSignin(document.getElementById('gp-login-btn'));
