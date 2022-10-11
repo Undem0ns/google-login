@@ -8,13 +8,22 @@
     <div class="g_id_signin" data-type="standard"></div>
 
     <script>
-    // const axios = require('axios').default;
+    const axios = require('axios').default;
 
-    async function onSignIn(googleUser) {
-        const axios = require('axios').default;
+    function onSignIn(googleUser) {
         console.log(googleUser)
-        const res = await axios.get('http://localhost:3000/api/v1/user')
-        console.log(res)
+        axios.get('http://localhost:3000/api/v1/user')
+            .then(function(response) {
+                // handle success
+                console.log(response);
+            })
+            .catch(function(error) {
+                // handle error
+                console.log(error);
+            })
+            .then(function() {
+                // always executed
+            });
     }
     </script>
 </body>
