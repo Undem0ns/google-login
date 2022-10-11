@@ -1,11 +1,8 @@
 <html lang="en">
 
-<header>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-</header>
-
 <body>
     <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <div id="g_id_onload" data-client_id="927679325793-nr98rvaq74vjvipp6gl5b3g9h4jeo7g4" data-callback="onSignIn">
     </div>
     <div class="g_id_signin" data-type="standard"></div>
