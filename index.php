@@ -8,7 +8,7 @@
     <div class="g_id_signin" data-type="standard"></div>
 
     <script>
-    const axios = require('axios');
+    const axios = require('axios').default;
 
     async function onSignIn(googleUser) {
         console.log(googleUser)
