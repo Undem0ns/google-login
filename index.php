@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    <!-- <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div> -->
     <button id="gp-login-btn">Sign in with Google</button>
     <br>
     Result: <textarea id="result"></textarea>
