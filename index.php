@@ -12,7 +12,7 @@
 
     async function onSignIn(googleUser) {
         console.log(googleUser)
-        const res = await axis.get('http://localhost:3000/api/v1/user')
+        const res = await axios.get('http://localhost:3000/api/v1/user')
         console.log(res)
     }
     </script>
