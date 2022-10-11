@@ -8,8 +8,6 @@
     <div class="g_id_signin" data-type="standard"></div>
 
     <script>
-    const axios = require('axios');
-
     function onSignIn(googleUser) {
         console.log(googleUser)
         axios.get('http://localhost:3000/api/v1/user')
