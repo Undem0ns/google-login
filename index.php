@@ -10,7 +10,9 @@
     <script>
     function onSignIn(googleUser) {
         console.log(googleUser)
-        axios.post('http://localhost:3000/api/v1/user/googlesignup', googleUser)
+        axios.post('http://localhost:3000/api/v1/user/googlesignup', {
+                token: googleUser.credential
+            })
             .then(function(response) {
                 // handle success
                 console.log(response);
