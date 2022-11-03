@@ -11,7 +11,9 @@
     function onSignIn(googleUser) {
         console.log(googleUser)
         axios.get('https://dowebpage-staging-api.super6group.com/api/v1/auth/decode/google', {
-                token: googleUser.credential
+                params: {
+                    token: googleUser.credential
+                }
             })
             .then(function(response) {
                 // handle success
