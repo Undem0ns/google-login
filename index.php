@@ -10,7 +10,7 @@
     <script>
     function onSignIn(googleUser) {
         console.log(googleUser)
-        axios.get('https://dowebpage-staging-api.super6group.com/api/v1/auth/decode/google', {
+        axios.get('http://localhost:3001/api/v1/auth/decode/google', {
                 params: {
                     token: googleUser.credential
                 }
