@@ -10,7 +10,7 @@
     <script>
     function onSignIn(googleUser) {
         console.log(googleUser)
-        axios.post('https://dowebpage-staging-api.super6group.com/api/v1/user/googlesignup', {
+        axios.post('https://dowebpage-staging-api.super6group.com/api/v1/user/decode/google', {
                 token: googleUser.credential
             })
             .then(function(response) {
